@@ -29,7 +29,7 @@ public class Login extends Bank {
 	}
   public static boolean isValidPassword(String password) {
 	  boolean isValid;
-	  if(password.length()<8) {
+	  if(password.length()<8 || password.length()>8) {
 		  System.out.println("password should contain 8 characters");
 		  isValid = false;
 	  }else {
